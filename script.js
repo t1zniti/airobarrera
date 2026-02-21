@@ -546,5 +546,3 @@
     try { saved = localStorage.getItem(LANG_KEY); } catch(e) {}
     applyTranslation(saved && translations[saved] ? saved : 'es');
   })();
-
-})();
