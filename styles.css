@@ -56,13 +56,10 @@
   bottom: 28px;
   right: 28px;
   z-index: 9999;
-  display: flex;
-  flex-direction: column; /* options above, toggle at bottom */
-  align-items: center;
-  gap: 12px;
+  /* No flex needed — toggle is the anchor, options float absolutely */
 }
 
-/* Main trigger button */
+/* Main trigger button — always at bottom-right corner */
 .lang-toggle {
   width: 58px;
   height: 58px;
@@ -80,8 +77,6 @@
   position: relative;
   z-index: 1;
   transition: transform 0.25s var(--ease-out), box-shadow 0.25s ease;
-  /* Always on top of everything */
-  flex-shrink: 0;
 }
 
 .lang-toggle:hover {
@@ -95,10 +90,13 @@
   outline-offset: 2px;
 }
 
-/* Options container */
+/* Options float ABOVE the toggle — absolutely, so they never shift the toggle */
 .lang-options {
+  position: absolute;
+  bottom: calc(58px + 12px); /* toggle height + gap */
+  right: 0;
   display: flex;
-  flex-direction: column; /* top option farthest, bottom closest to toggle */
+  flex-direction: column;
   gap: 10px;
   align-items: center;
   pointer-events: none;
@@ -119,15 +117,13 @@
   font-size: 1.5rem;
   line-height: 1;
   padding: 0;
-  /* Start state: invisible and shifted down */
   opacity: 0;
-  transform: translateY(20px) scale(0.7);
+  transform: translateY(12px) scale(0.7);
   transition:
     opacity 0.3s ease,
     transform 0.3s var(--ease-out),
     box-shadow 0.2s ease,
     border-color 0.2s ease;
-  /* Stagger via nth-child (reversed because of column-reverse) */
 }
 
 /* Stagger: buttons pop in sequentially upward */
@@ -164,10 +160,45 @@
     height: 52px;
     font-size: 1.55rem;
   }
+  .lang-options {
+    bottom: calc(52px + 12px);
+  }
   .lang-btn {
     width: 44px;
     height: 44px;
     font-size: 1.3rem;
+  }
+}
+
+/* ── Landscape / short-viewport: options expand LEFT instead of upward ── */
+@media (orientation: landscape) and (max-height: 520px) {
+  .lang-options {
+    bottom: 0;
+    right: calc(58px + 12px); /* to the left of the toggle */
+    flex-direction: row-reverse;
+  }
+
+  .lang-btn {
+    opacity: 0;
+    transform: translateX(12px) scale(0.7);
+    width: 42px;
+    height: 42px;
+    font-size: 1.25rem;
+  }
+
+  .lang-options.open .lang-btn {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+
+  .lang-btn:hover {
+    transform: translateX(0) scale(1.12);
+  }
+
+  .lang-toggle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
   }
 }
 
