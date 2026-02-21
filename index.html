@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Windscreen — Premium glass windscreens for luxury patios. Invisible protection, timeless elegance.">
-  <title>Windscreen — Premium Patio Glass</title>
+  <meta name="description" content="Airobarrera — Premium glass windscreens for luxury patios. Invisible protection, timeless elegance.">
+  <title>Airobarrera — Premium Patio Glass</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -17,14 +17,14 @@
   ════════════════════════════════════════════ -->
   <header class="site-header" id="siteHeader">
     <div class="header-inner">
-      <a href="index.html" class="logo" aria-label="Windscreen Home">Windscreen</a>
+      <a href="index.html" class="logo" aria-label="Airobarrera Home">Airobarrera</a>
       <nav class="main-nav" id="mainNav" aria-label="Primary navigation">
         <ul class="nav-links">
-          <li><a href="#hero" class="nav-link active">Home</a></li>
-          <li><a href="products.html" class="nav-link">Products</a></li>
-          <li><a href="blog.html" class="nav-link">Blog</a></li>
-          <li><a href="#location" class="nav-link">Location</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#hero" class="nav-link active" data-i18n="nav.home">Home</a></li>
+          <li><a href="products.html" class="nav-link" data-i18n="nav.products">Products</a></li>
+          <li><a href="blog.html" class="nav-link" data-i18n="nav.blog">Blog</a></li>
+          <li><a href="#location" class="nav-link" data-i18n="nav.location">Location</a></li>
+          <li><a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a></li>
         </ul>
       </nav>
       <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -44,10 +44,10 @@
       <div class="hero-bg" style="background-image: url('assets/Screenshot%202026-02-21%20at%2017.36.55.png');"></div>
       <div class="hero-overlay"></div>
       <div class="hero-content reveal">
-        <span class="hero-eyebrow">Premium Patio Glass</span>
-        <h1 class="hero-title">Elegance You<br>Can See Through</h1>
-        <p class="hero-subtitle">Handcrafted glass windscreens that shield without hiding the view.</p>
-        <a href="#about" class="btn btn-primary">Discover More</a>
+        <span class="hero-eyebrow" data-i18n="hero.eyebrow">Premium Patio Glass</span>
+        <h1 class="hero-title" data-i18n-html="hero.title">Elegance You<br>Can See Through</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Handcrafted glass windscreens that shield without hiding the view.</p>
+        <a href="#about" class="btn btn-primary" data-i18n="hero.btn">Discover More</a>
       </div>
       <div class="hero-scroll-hint" aria-hidden="true">
         <span class="scroll-arrow"></span>
@@ -61,18 +61,18 @@
       <div class="container">
         <div class="unseen-grid">
           <div class="unseen-text reveal">
-            <span class="section-eyebrow">The Unseen Shield</span>
-            <h2 class="section-title">Invisible Yet<br>Protective</h2>
-            <p class="section-body">
+            <span class="section-eyebrow" data-i18n="about.eyebrow">The Unseen Shield</span>
+            <h2 class="section-title" data-i18n-html="about.title">Invisible Yet<br>Protective</h2>
+            <p class="section-body" data-i18n="about.body1">
               Our windscreens are engineered to disappear. What remains is pure, uninterrupted vision — 
               your garden, your horizon, your sky. Crafted from tempered architectural glass, each panel 
               withstands the elements while maintaining crystal clarity for years.
             </p>
-            <p class="section-body">
+            <p class="section-body" data-i18n="about.body2">
               No bulky frames. No visual noise. Just the quiet confidence of protection that knows 
               when to stay out of sight.
             </p>
-            <a href="#products" class="btn btn-secondary">View Products</a>
+            <a href="#products" class="btn btn-secondary" data-i18n="about.btn">View Products</a>
           </div>
           <div class="unseen-image reveal">
             <img src="assets/Screenshot%202026-02-21%20at%2017.37.03.png" alt="Transparent glass windscreen on a luxury patio" loading="lazy">
@@ -87,9 +87,9 @@
     <section class="products" id="products">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-eyebrow">Our Collection</span>
-          <h2 class="section-title">Crafted for Every Space</h2>
-          <p class="section-body section-body--centered">
+          <span class="section-eyebrow" data-i18n="products.eyebrow">Our Collection</span>
+          <h2 class="section-title" data-i18n="products.title">Crafted for Every Space</h2>
+          <p class="section-body section-body--centered" data-i18n="products.subtitle">
             From terraces overlooking the coast to intimate urban balconies, 
             our range adapts to your architecture.
           </p>
@@ -100,9 +100,9 @@
               <img src="assets/Screenshot%202026-02-21%20at%2017.37.14.png" alt="Frameless glass windscreen panel" loading="lazy">
             </div>
             <div class="product-card-body">
-              <h3>Frameless Panel</h3>
-              <p>Pure edge-to-edge glass. No frames, no distractions — the pinnacle of minimalism.</p>
-              <a href="#contact" class="btn btn-text">Learn More &rarr;</a>
+              <h3 data-i18n="product1.title">Frameless Panel</h3>
+              <p data-i18n="product1.desc">Pure edge-to-edge glass. No frames, no distractions — the pinnacle of minimalism.</p>
+              <a href="#contact" class="btn btn-text" data-i18n="products.learn">Learn More &rarr;</a>
             </div>
           </article>
           <article class="product-card glass-card reveal">
@@ -110,9 +110,9 @@
               <img src="assets/Screenshot%202026-02-21%20at%2017.37.35.png" alt="Sliding glass windscreen system" loading="lazy">
             </div>
             <div class="product-card-body">
-              <h3>Sliding System</h3>
-              <p>Retractable panels on a whisper-quiet rail. Open when the weather invites, close when it turns.</p>
-              <a href="#contact" class="btn btn-text">Learn More &rarr;</a>
+              <h3 data-i18n="product2.title">Sliding System</h3>
+              <p data-i18n="product2.desc">Retractable panels on a whisper-quiet rail. Open when the weather invites, close when it turns.</p>
+              <a href="#contact" class="btn btn-text" data-i18n="products.learn">Learn More &rarr;</a>
             </div>
           </article>
           <article class="product-card glass-card reveal">
@@ -120,9 +120,9 @@
               <img src="assets/Screenshot%202026-02-21%20at%2017.37.50.png" alt="Fixed glass balustrade windscreen" loading="lazy">
             </div>
             <div class="product-card-body">
-              <h3>Fixed Balustrade</h3>
-              <p>Structural elegance for elevated terraces. Safety and style fused into a single seamless line.</p>
-              <a href="#contact" class="btn btn-text">Learn More &rarr;</a>
+              <h3 data-i18n="product3.title">Fixed Balustrade</h3>
+              <p data-i18n="product3.desc">Structural elegance for elevated terraces. Safety and style fused into a single seamless line.</p>
+              <a href="#contact" class="btn btn-text" data-i18n="products.learn">Learn More &rarr;</a>
             </div>
           </article>
         </div>
@@ -136,21 +136,21 @@
       <div class="container">
         <div class="location-grid">
           <div class="location-text reveal">
-            <span class="section-eyebrow">Visit Our Workshop</span>
-            <h2 class="section-title">Where Craft<br>Meets Precision</h2>
-            <p class="section-body">
-              Every Windscreen panel is measured, cut, and finished by hand in our dedicated workshop. 
+            <span class="section-eyebrow" data-i18n="location.eyebrow">Visit Our Workshop</span>
+            <h2 class="section-title" data-i18n-html="location.title">Where Craft<br>Meets Precision</h2>
+            <p class="section-body" data-i18n="location.body">
+              Every Airobarrera panel is measured, cut, and finished by hand in our dedicated workshop. 
               We welcome visits by appointment — come see the process behind the product.
             </p>
             <address class="location-address">
               <p>123 Artisan Lane<br>Coastal Quarter, CA 90210</p>
-              <p><a href="mailto:hello@windscreen.com">hello@windscreen.com</a></p>
+              <p><a href="mailto:hello@airobarrera.com">hello@airobarrera.com</a></p>
               <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
             </address>
           </div>
           <div class="location-map glass-card reveal">
             <iframe 
-              title="Windscreen workshop location"
+              title="Airobarrera workshop location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509226!2d-122.4194!3d37.7749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzfCsDQ2JzI5LjYiTiAxMjLCsDI1JzA5LjgiVw!5e0!3m2!1sen!2sus!4v1600000000000" 
               width="100%" 
               height="100%" 
@@ -170,11 +170,11 @@
     <section class="cta" id="contact">
       <div class="container">
         <div class="cta-inner glass-card reveal">
-          <h2 class="section-title">Ready to Transform<br>Your Outdoor Space?</h2>
-          <p class="section-body section-body--centered">
+          <h2 class="section-title" data-i18n-html="cta.title">Ready to Transform<br>Your Outdoor Space?</h2>
+          <p class="section-body section-body--centered" data-i18n="cta.body">
             Get a bespoke consultation. We'll design the perfect windscreen solution for your patio.
           </p>
-          <a href="mailto:hello@windscreen.com" class="btn btn-primary">Get in Touch</a>
+          <a href="mailto:hello@airobarrera.com" class="btn btn-primary" data-i18n="cta.btn">Get in Touch</a>
         </div>
       </div>
     </section>
@@ -188,21 +188,21 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">Windscreen</a>
-          <p class="footer-tagline">Premium glass windscreens<br>for discerning spaces.</p>
+          <a href="index.html" class="logo">Airobarrera</a>
+          <p class="footer-tagline" data-i18n-html="footer.tagline">Premium glass windscreens<br>for discerning spaces.</p>
         </div>
         <nav class="footer-nav" aria-label="Footer navigation">
-          <h4>Navigation</h4>
+          <h4 data-i18n="footer.nav">Navigation</h4>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="index.html#location">Location</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+            <li><a href="products.html" data-i18n="nav.products">Products</a></li>
+            <li><a href="blog.html" data-i18n="nav.blog">Blog</a></li>
+            <li><a href="index.html#location" data-i18n="nav.location">Location</a></li>
+            <li><a href="index.html#contact" data-i18n="nav.contact">Contact</a></li>
           </ul>
         </nav>
         <div class="footer-social">
-          <h4>Follow Us</h4>
+          <h4 data-i18n="footer.follow">Follow Us</h4>
           <div class="social-grid">
             <a href="#" class="social-link" aria-label="Instagram">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
@@ -217,10 +217,21 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 Windscreen. All rights reserved.</p>
+        <p data-i18n="footer.copy">&copy; 2026 Airobarrera. All rights reserved.</p>
       </div>
     </div>
   </footer>
+
+  <!-- Language Switcher Widget -->
+  <div class="lang-switcher" id="langSwitcher" role="region" aria-label="Language selector">
+    <div class="lang-options" id="langOptions" aria-hidden="true">
+      <button class="lang-btn" data-lang="en" aria-label="Switch to English">🇬🇧</button>
+      <button class="lang-btn" data-lang="fr" aria-label="Basculer en français">🇫🇷</button>
+    </div>
+    <button class="lang-toggle" id="langToggle" aria-label="Language selector" aria-expanded="false">
+      <span id="currentFlag">🇪🇸</span>
+    </button>
+  </div>
 
   <script src="script.js"></script>
 </body>
